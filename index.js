@@ -16,5 +16,5 @@ numbers[5]=57885;
 
 // 3. Find index of an element positon
 
-var positionIndex=numbers.indexOf(89);
+var positionIndex=numbers.indexOf(45);
 console.log(positionIndex);
