@@ -8,8 +8,13 @@ var numbers=[45,68,78,56,89,98];
 
 // 1:Get element by index
 var element=numbers[1];
-console.log(element);
+// console.log(element);
 // 2.set element value by index
 numbers[1]=77;
 numbers[5]=57885;
-console.log(numbers);
+// console.log(numbers);
+
+// 3. Find index of an element positon
+
+var positionIndex=numbers.indexOf(89);
+console.log(positionIndex);
