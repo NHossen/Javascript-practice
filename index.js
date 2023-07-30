@@ -18,3 +18,6 @@ numbers[5]=57885;
 
 var positionIndex=numbers.indexOf(45);
 console.log(positionIndex);
+
+let myArray = [1, 2, 3, 4, 5];
+console.log(myArray[2]);
