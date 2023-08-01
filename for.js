@@ -14,6 +14,6 @@
 // }
 var num=[32,33,22,4756,37456,3244];
 
-for(var i=0; i<=5; i++){
-    console.log(num[i]);
+for(var i=0; i< num.length; i++){
+    console.log(num,i);
 }
