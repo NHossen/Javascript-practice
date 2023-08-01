@@ -11,6 +11,13 @@ var friendAge= [11,21,45,17,14,105.60];
 var picnicFee=[5000,2000,4000,150];
 
 // Array length for how many items in array
-console.log(friendsName.length);
-console.log(friendAge);
+// console.log(friendsName.length);
+// console.log(friendAge);
 
+
+
+for(var i=[32,45,21]; i<5;i++){
+    var iLength=i.Length();
+}
+
+console.log(iLength);
