@@ -12,4 +12,10 @@ var mobile={
 }
 
 // Objective property by consle
-console.log(mobile.price);
+// console.log(mobile.price);
+function movie(){
+    return "Din-The day";
+    return "Poran";
+    return "Hawa";
+   }
+   console.log(movie());
