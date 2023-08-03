@@ -20,3 +20,6 @@ const nanaIncesh=244;
 const nanaFeet=InchToFeet(nanaIncesh);
 console.log(nanaFeet);
 
+function inchToFeet(___){ 
+    var feet = inch/12;
+     _____ feet; }

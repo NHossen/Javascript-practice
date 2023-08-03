@@ -10,20 +10,22 @@
 
 // Even number check
 
-function isEven(number) {
+// function isEven(number) {
 
-    const reminder=number%2;
+//     const reminder=number%2;
 
-    // console.log(reminder);
-    if (reminder===0) {
-        // console.log('This is Even Number');
-        return true;
+//     // console.log(reminder);
+//     if (reminder===0) {
+//         // console.log('This is Even Number');
+//         return true;
         
-    }
-    else{
-        // console.log('this is odd');
-        return false
-    }
+//     }
+//     else{
+//         // console.log('this is odd');
+//         return false
+//     }
     
-}
-isEven(303);
+// }
+// isEven(303);
+
+console.log(6*(6-1));
