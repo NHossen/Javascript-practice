@@ -5,10 +5,10 @@ function isLeapyear(year) {
         return true;
     }
     else{
-        // console.log(
-        //     'not leap year'
+        console.log(
+            'not leap year'
 
-        // )
+        )
         return false;
 
     }
