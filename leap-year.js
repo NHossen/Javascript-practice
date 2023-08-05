@@ -25,3 +25,6 @@ function isLeap(year) {
 var yearInput=2032;
 var leapYear= isLeap(yearInput);
 console.log(leapYear);
+
+
+
