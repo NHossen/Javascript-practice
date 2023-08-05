@@ -131,7 +131,23 @@ let myArray = [1, 2, 3, 4, 5];
      return largestNum;
  }                           
 const randomArrayNumber=[5,12,4,45,21,12,8,3];  
-console.log(findLargest(randomArrayNumber));      
+console.log(findLargest(randomArrayNumber));  
+
+
+                          // Find Largest friends name string by array and loops
+
+function biggestFriendName(myFriends){
+    let biggest=myFriends[0];//arif
+    for(let i=1; i<myFriends.length;i++){
+        if(myFriends[i].length>biggest.length){
+            biggest=myFriends[i];
+        }
+    }
+    return biggest;
+}
+ const myFriends=["arif",'Riad','Sana','Nur','Naeem','Sannaullah'] 
+ 
+ console.log(biggestFriendName(myFriends));
 
 
                                           // concat with another array
