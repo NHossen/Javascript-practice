@@ -14,7 +14,7 @@ var picnicFee=[5000,2000,4000,150];
 console.log(friendsName.length);
 console.log(friendAge);
 
-                                    // Push and pop
+                                    // //Push and pop
 
 var num=[78,45,98,45];
 // array push yo add to an array in last 
@@ -30,14 +30,14 @@ var friends=["nur" ,'sana' , 'riad'];
 friends.pop();
 console.log(friends);
 
-                                // Sum of Regular array Number by Normal for loop
+                                // //Sum of Regular array Number by Normal for loop
 
 function sumOfNumbers(number) {
     let sum=0;
     for (let i = 0; i < number.length; i++) {
     sum+=i;
-    // sum=sum+number[i];
-    // console.log(i,sum);
+    // sum=sum+number[i]; //Chack i and sum number list together
+    // console.log(i,sum); //chack sum step by step with i number (0....last)
     
     }
     return sum;
@@ -47,7 +47,7 @@ const arrayNumber=[1,2,3,4,5,6,7,8,9];
 const totalSum=sumOfNumbers(arrayNumber);
 console.log(totalSum);
 
-                      // Sum of Regular array Number by  for-of  loop
+                      // //Sum of Regular array Number by  for-of  loop
 
 function sumOfRegularA(array){
     let s =0;
@@ -58,9 +58,25 @@ function sumOfRegularA(array){
 }
 const numberArray=[23,34,452,23,23,32]   ;
 const sumofArray=sumOfRegularA(numberArray);
-console.log(sumofArray);                                   
-                      
-                                      // Array Positons
+console.log(sumofArray);          
+
+                                // //Sum of Odds or bijor number from an array
+
+  function sumOfOddsNumber(oddsArray){
+    let sum =0
+    for (let item of oddsArray){
+
+    // Normal for loops //if (oddsArray[i]%2===1)
+        if (item%2===1){  //if even number it will be item%2===0 it's even number.
+            sum=sum+item; //Normal loop //sum=sum+oddsArray[i];
+        }
+    }
+    return sum;
+  }   
+  const num2=[1,2,3,4,5,6,7,8,9,20] ;
+  const  sumOfOdds=sumOfOddsNumber(num2);
+  console.log(sumOfOdds) ;         
+                                      // //Array Positons
 
 
 //  By index chack array positon
@@ -77,22 +93,22 @@ fruits.pop();// Items remove from array by pop
 fruits.push('Watermelon');// Items add by push
 // console.log(fruits);
 
-                                            // Array index
+                                            // //Array index
 
 // index is like menu by index you can accses in array
 var num1=[45,68,78,56,89,98];
 
-                                    // 1:Get element by index
+                                    // //1:Get element by index
 var firstOne=num1[1];
 var second =num1[5];
 // console.log(firstOne,second);
 
-                               // 2.set element value by index
+                               // //2.set element value by index
 num1[1]=77;
 num1[5]=57885;
 // console.log(numbers);
 
-                               // 3. Find index of an element positon
+                               // //3. Find index of an element positon
 
 var positionIndex=num1.indexOf(45);
 // console.log(positionIndex);
