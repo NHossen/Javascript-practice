@@ -65,3 +65,28 @@ const myinfo={
   address:"Bangladesh"
 }
 console.log(personalInfo(myinfo));
+
+
+                         // Total cost by object and function
+ 
+ const shoppingCart=[
+  {productName:'Shoe',price:1200, quantity:2},
+  {productName:'Shirt',price:2200,quantity:5 },
+  {productName:'pant',price:3200,quantity:4 },
+  {productName:'belt',price:200, quantity:3},
+ ]    
+ 
+ function totalCost(products){
+  let sumOfProducts=0
+  for(let i=0;i<products.length;i++){
+    const product=products[i];
+    // const productTotal=product.price*product.quantity;
+    sumOfProducts=sumOfProducts+product.price;//if add quantity replace product.price to productTotal;
+    console.log(product); //if you want to show all products you need to console.log
+
+  }
+   return sumOfProducts;
+ }
+
+ const expense=totalCost(shoppingCart);
+ console.log('Total expense today:' , expense);

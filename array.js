@@ -117,4 +117,53 @@ let myArray = [1, 2, 3, 4, 5];
 // console.log(myArray[2]);
 
 
+                            // Find the largest number from an array
 
+ function findLargest(x){
+
+    let largestNum=x[0];
+    for (let i=1; i<x.length;i++){
+        if (x[i]>largestNum){
+            largestNum=x[i];
+        }
+
+    }
+     return largestNum;
+ }                           
+const randomArrayNumber=[5,12,4,45,21,12,8,3];  
+console.log(findLargest(randomArrayNumber));      
+
+
+                                          // concat with another array
+// const newfrindage=[12,12,64,32,12,64,]   ;
+// const allFriends=newfrindage.concat(friends) ;   
+
+                                // chack  a array item avaiable or not by includes
+
+// console.log(friends.includes(19));
+
+                                        // //Array with Objects
+
+ const phones=[
+
+    { brand:'Samsung', camera:12, Storage:'32gb',price:89000,color:"silver"},
+    { brand:'Vivo', camera:12, Storage:'32gb',price:76000,color:"silver"},
+    { brand:'MI', camera:12, Storage:'32gb',price:86000,color:"silver"},
+    { brand:'Sony', camera:12, Storage:'32gb',price:656000,color:"silver"},
+    { brand:'Apple', camera:12, Storage:'32gb',price:3333000,color:"silver"},
+    { brand:'Huawei', camera:12, Storage:'32gb',price:36000,color:"silver"},
+ ]   
+ 
+ function cheapestPhone(phones){
+    let cheapest=phones[0];
+    for(let i=0; i<phones.length;i++){
+        const phone=phones[i];
+        if(phone.price<cheapest.price){
+            cheapest=phone;
+        }
+    }
+    return cheapest;
+ }
+
+ const mySelection=cheapestPhone(phones);
+ console.log(mySelection);

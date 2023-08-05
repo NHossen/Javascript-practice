@@ -170,3 +170,45 @@ const oddNumbersSum=getSum(oddNumbers);
 console.log(oddNumbersSum);
 
 
+
+                                // 5!= 5*4*3*2*1 8! is Factorial by loop //
+
+// Factorial for 5!
+
+const number=5; //declacre a factorial number
+let result=1; //declare result value
+
+for(let i=number;i>=1;i--){ //for loop decrease 1 by one
+    result=result*i; //Multipulation result with i 
+}
+console.log(result);
+
+// Factorial for 8!
+
+const numbe2=8; //declacre a factorial number
+let result2=1; //declare result value
+
+for(let i=numbe2;i>=1;i--){ //for loop decrease 1 by one
+    result2=result2*i; //Multipulation result with i 
+}
+console.log(result2);
+
+
+
+                                    // Factorial by Functions
+
+ function factorial(n){
+    if(n ===0 || n===1){
+        return 1;
+    }
+
+    let result3=1;
+    for(let i=n;i>=1;i--){
+        result3=result3*i;
+    }
+    return result3;
+ } 
+ 
+ console.log(factorial(11));
+
+
