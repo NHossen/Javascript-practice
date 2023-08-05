@@ -106,3 +106,20 @@ function multi(a,b){
 
 }
 multi(4,5);
+
+                               // //Multipulation by Functions
+
+
+ function multiplicationNumbersOfNumbers(number) {
+    let multiplication=1;
+    for (let i = 1; i <= number.length; i++) {
+        multiplication*=i;
+    // sum=sum+i;
+    console.log(i,multiplication);
+    
+    }
+    return multiplication;
+}
+
+const numbers=[1,2,3,4,5,6,7,8,9];
+multiplicationNumbersOfNumbers(numbers);                              

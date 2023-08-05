@@ -1,5 +1,35 @@
                                   
+                              // Object Properties chack  
 
+var shopingCar={
+    books:3,
+    sunglass:4,
+    pen:6,
+    mouse:1
+
+}
+// When you know the specific property name use dot notation
+var penCount=shopingCar.pen;
+
+// alternative system by property and used third bracket
+
+var penCount2=shopingCar['pen'];
+
+// If i dont know property name;
+var propertyName='mouse';
+var propertieValue=shopingCar[propertyName];
+console.log(propertyName,propertieValue);
+
+// Peoperty name
+
+var properties=Object.keys(shopingCar);
+var propertieValue=Object.values(shopingCar);
+// console.log(properties);
+// console.log(propertieValue);
+// console.log(shopingCar);
+
+
+                              //objects
 
 var student={
   id:115,
@@ -81,7 +111,7 @@ console.log(personalInfo(myinfo));
   for(let i=0;i<products.length;i++){
     const product=products[i];
     // const productTotal=product.price*product.quantity;
-    sumOfProducts=sumOfProducts+product.price;//if add quantity replace product.price to productTotal;
+    sumOfProducts=sumOfProducts+product.price;//if add quantity replace product.price to productTotal
     console.log(product); //if you want to show all products you need to console.log
 
   }
