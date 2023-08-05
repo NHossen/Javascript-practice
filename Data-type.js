@@ -1,4 +1,3 @@
-
 // String type variable
 var bottle='water';
 var bottleColor='yellow';

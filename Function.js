@@ -1,4 +1,4 @@
-// 1. Function declartion
+                          // 1. Function declartion sum and Avarage
 
 function add(x,y){ //1.first Function
     let total=x+y;// console.log(total);
@@ -39,4 +39,36 @@ function avarageMark(nur,naeem){//nurMarks and NaeemMarks
 
 let avarageMarkTwofriends =avarageMark(nurMarks,naeemMarks);
 console.log("Naeem And Nur avarage mark",avarageMarkTwofriends);
+
+                                        // Coverter by Function
+
+function InchToFeet(incches) {// const myInches=12;
+    const feet=incches/12;// const myFeet=myInches/12;
+    return feet;// console.log(myFeet);
+}
+const dadaInches=144;
+const dadaFeet=InchToFeet(dadaInches);
+console.log(dadaFeet);
+// Another converter:
+const nanaIncesh=244;
+const nanaFeet=InchToFeet(nanaIncesh);
+console.log(nanaFeet);
+
+// Miles to km 
+/*
+1 mile=1.60934 km
+
+300 milea = how much km?
+
+*/ 
+
+function milesToKm(miles) {
+
+    const km=miles*1.60934;
+    return km;
+    
+}
+const inputmiles=300;
+const totalKm=milesToKm(inputmiles);
+console.log(totalKm);
 

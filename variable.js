@@ -1,3 +1,4 @@
+
 // Number type variable
 
 var sunglassPrice =120;
@@ -14,4 +15,8 @@ var oneIs1=3;
 var twoIs2=3.5;
 // Mathe operations : + ,-,*,/
 // Shorthand: += -= ++ --
+
+                                          // Two decimal place
+
+// Average.toFixed(2);
 
