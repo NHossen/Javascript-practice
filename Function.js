@@ -13,7 +13,7 @@ function chackAnotherSum(a,b){//2.funciton Another Function To Included with fir
 }
 let sumOfMoney=(chackAnotherSum(7,8));//Second Function Value
 let mainMoney=sumOfMoney*getMoney; //First and Second Function value
-console.log('This is Your Change',mainMoney);//First and Second Functions Console value
+console.log('This is Your Change', mainMoney);//First and Second Functions Console value
 
 
 // 2.Function > How to re-use Function Chack??
@@ -72,3 +72,37 @@ const inputmiles=300;
 const totalKm=milesToKm(inputmiles);
 console.log(totalKm);
 
+                                  /*Four Type of number
+                                  
+                                  1.no perameters,no return
+                                  2.perameters with no return
+                                  3.no perameters with return
+                                  4.perameters with return
+
+                                  */
+                                   
+//1. no perameters,no return
+function show(){
+console.log('hello');
+}
+show();
+// 2.perameters with no return
+function add(x,y){
+    console.log(x+y);
+}
+add(2,2);
+// 3.no perameters with return
+function giveMoney(){
+    const money=500;
+    return money;
+}
+giveMoney();
+
+// 4.perameters with return
+
+function multi(a,b){
+  const result=a*b;
+  return result;
+
+}
+multi(4,5);

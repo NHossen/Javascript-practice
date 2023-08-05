@@ -11,19 +11,18 @@ var friendAge= [11,21,45,17,14,105.60];
 var picnicFee=[5000,2000,4000,150];
 
 // Array length for how many items in array
-// console.log(friendsName.length);
-// console.log(friendAge);
+console.log(friendsName.length);
+console.log(friendAge);
 
                                     // Push and pop
 
-var numbers=[78,45,98,45];
-
+var num=[78,45,98,45];
 // array push yo add to an array in last 
-numbers.push(63);
-console.log(numbers);
+num.push(63);
+console.log(num);
 var friends=["nur" ,'sana' , 'riad'];
 friends.push("rahim");
-// console.log(friends)
+console.log(friends)
 
 //use  array pop to get last element
 
@@ -31,83 +30,75 @@ var friends=["nur" ,'sana' , 'riad'];
 friends.pop();
 console.log(friends);
 
-                                           // Sum of Regular array Number
-
-// Calculate Factorial of number using loop
-
-// 1,2,3,4,5,6,7,8,9
-
-// let sum=0
-// const numbers=[1,2,3,4,5,6,7,8,9];
-
-// for (let i = 0; i < numbers.length; i++) {
-//     sum+=i;
-//     // sum=sum+i;
-//     console.log(i,sum);
-    
-// }
-
+                                // Sum of Regular array Number by Normal for loop
 
 function sumOfNumbers(number) {
     let sum=0;
     for (let i = 0; i < number.length; i++) {
     sum+=i;
-    // sum=sum+i;
-    console.log(i,sum);
+    // sum=sum+number[i];
+    // console.log(i,sum);
     
     }
     return sum;
 }
 
-const numbers=[1,2,3,4,5,6,7,8,9];
-sumOfNumbers(numbers);
+const arrayNumber=[1,2,3,4,5,6,7,8,9];
+const totalSum=sumOfNumbers(arrayNumber);
+console.log(totalSum);
 
-                                        // Array Positons
+                      // Sum of Regular array Number by  for-of  loop
+
+function sumOfRegularA(array){
+    let s =0;
+    for (let item of array){
+        s=s+item;
+    }
+    return s
+}
+const numberArray=[23,34,452,23,23,32]   ;
+const sumofArray=sumOfRegularA(numberArray);
+console.log(sumofArray);                                   
+                      
+                                      // Array Positons
+
 
 //  By index chack array positon
 var fruits =['apple','Banana','orange'];
 positonNum=fruits.indexOf('Banana');
 //  console.log(positonNum);
 
-// Change array by Array Number
-fruits[1]='Mango';
+
+fruits[1]='Mango';// Change or set array by Array Number
 // console.log(fruits);
 
-// Items remove from array
-fruits.pop();
+fruits.pop();// Items remove from array by pop
 // console.log(fruits);
-
-// Items add by push
-
-fruits.push('Watermelon');
-
-console.log(fruits);
+fruits.push('Watermelon');// Items add by push
+// console.log(fruits);
 
                                             // Array index
 
 // index is like menu by index you can accses in array
-var numbers=[45,68,78,56,89,98];
-// get element by index
-// var second =numbers[1];
-// console.log(second);
-// numbers[1]=88;
+var num1=[45,68,78,56,89,98];
 
+                                    // 1:Get element by index
+var firstOne=num1[1];
+var second =num1[5];
+// console.log(firstOne,second);
 
-// 1:Get element by index
-var element=numbers[1];
-// console.log(element);
-// 2.set element value by index
-numbers[1]=77;
-numbers[5]=57885;
+                               // 2.set element value by index
+num1[1]=77;
+num1[5]=57885;
 // console.log(numbers);
 
-// 3. Find index of an element positon
+                               // 3. Find index of an element positon
 
-var positionIndex=numbers.indexOf(45);
-console.log(positionIndex);
+var positionIndex=num1.indexOf(45);
+// console.log(positionIndex);
 
 let myArray = [1, 2, 3, 4, 5];
-console.log(myArray[2]);
+// console.log(myArray[2]);
 
 
 
