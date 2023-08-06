@@ -122,4 +122,21 @@ multi(4,5);
 }
 
 const numbers=[1,2,3,4,5,6,7,8,9];
-multiplicationNumbersOfNumbers(numbers);                              
+multiplicationNumbersOfNumbers(numbers);  
+
+
+                       //Random name to buy Lunche problem;
+
+
+function whoPaying(names){
+    var numberOfPepople=names.length;
+    var randomPersonPostion=Math.floor(Math.random()*numberOfPepople);
+    var randomPerson=names[randomPersonPostion];
+    console.log(randomPerson);
+    return randomPerson + " is going to buy lunch today";
+
+}
+
+const nameOfFriends=['Ansar',"Faruk",'Naerm','Rubel','Sonen',];
+console.log(whoPaying(nameOfFriends));
+
