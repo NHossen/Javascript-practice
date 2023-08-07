@@ -248,4 +248,43 @@ for (let counter = 1; counter >= 1; counter = counter - 1)
         console.log("No bottles of beer on the wall.");
     }
 }
-                         
+     
+
+                                       // prime unmber solution
+
+function findPrimeNumbers(arrayFile){
+    if(!Array.isArray(arrayFile)){
+        return "Please Provide me a Number "
+    }else{
+        // 0 1 cant me prime number
+        let primes=[]
+        for(let item of arrayFile){
+
+            if(item>1){
+
+                let flag=true;
+                for(let i=2;i<item;i++){
+                    if(item%i===0){
+                        flag=false;
+                        break;
+
+                    }
+                }
+
+                if(flag===true){
+                primes.push(item);
+                }
+            }
+
+        }
+        return primes;
+    }
+    
+
+}
+
+const numbers=[4,7,8,11,9,2,10];
+console.log(findPrimeNumbers(numbers));
+  
+  
+
