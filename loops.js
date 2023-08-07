@@ -135,6 +135,15 @@ function getSum(numbers) {
 
     
 }
+
+                                     // Sum of Odds number
+// let sumOdds = [1, 3, 5, 7, 9];
+let sum=0;
+for(let i=1;i<=5;i+=2){
+    
+    sum=sum+i;
+}
+console.log(sum);
 // Numbers Declare by Variable
 const myArrayNum=[12,65,45,78,32,45,91];
 getSum(myArrayNum);
