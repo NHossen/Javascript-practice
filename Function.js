@@ -147,9 +147,53 @@ function HouseKeeper(yearsofExperience,name,cleaningRepotoire){
     this.yearsofExperience=yearsofExperience;
     this.name=name;
     this.cleaningRepotoire=cleaningRepotoire;
+    
+                                     //  Method
+      this.moveSuitcase=function(){
+        console.log("May I take Your suitcase?");
+        pickUpSuitCase();
+        move();
+      }  
+      //second method
+      this.clean=function(){
+        console.log("Cleaning in progress...");
+      }                             
  }   
  
  var houseKeeper1=new HouseKeeper(9,"tom",["lobby","bedroom"]);
  var houseKeeper2=new HouseKeeper(5,"Naeem",["Handdy","bedroom"]);
- console.log(houseKeeper1,houseKeeper2);
+ var houseKeeper3=new HouseKeeper(12,'James',["bedroom"]);
+ console.log(houseKeeper1,houseKeeper2,houseKeeper3);
+
+                                       
+ 
+                                      //  Call back function
+
+  // Define a function that takes a callback function as an argument
+function doSomethingAsync(callback) {
+  // Simulate an asynchronous operation (e.g., fetching data from a server)
+  setTimeout(function() {
+      var result = "Async operation completed";
+      callback(result); // Call the callback function with the result
+  }, 2000); // Simulate a 2-second delay
+}
+
+// Define a callback function
+function handleResult(result) {
+  console.log(result);
+}
+
+// Call the main function and provide the callback
+doSomethingAsync(handleResult);
+
+
+/*
+We have a function doSomethingAsync that simulates an asynchronous operation using setTimeout.
+The doSomethingAsync function takes a callback function callback as an argument.
+Inside doSomethingAsync, after the asynchronous operation is completed, it calls the provided callback function and passes the result to it.
+We define a separate function handleResult that will be used as the callback.
+We call doSomethingAsync and pass handleResult as the callback function.
+When doSomethingAsync is called, it simulates an asynchronous operation and then calls the handleResult function with the result after the operation is completed.
+*/
+                                   
 
