@@ -185,7 +185,7 @@ function biggestFriendName(myFriends){
  console.log(mySelection);
 
 
-                         //  Multi-dimensional array multiply by for loop
+                        //  Multi-dimensional array multiply by for loop
 
 
 function multiplyAll(arr) {

@@ -250,7 +250,7 @@ for (let counter = 1; counter >= 1; counter = counter - 1)
 }
      
 
-                                       // prime unmber solution
+                                       // prime Number solution
 
 function findPrimeNumbers(arrayFile){
     if(!Array.isArray(arrayFile)){
