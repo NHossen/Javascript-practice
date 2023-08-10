@@ -1,26 +1,26 @@
-// Define a function that takes a callback function as an argument
-function doSomethingAsync(callback) {
-   // Simulate an asynchronous operation (e.g., fetching data from a server)
-   setTimeout(function() {
-       var result = "Async operation completed";
-       callback(result); // Call the callback function with the result
-   }, 2000); // Simulate a 2-second delay
+function findAddress(obj) {
+    let objectName =[
+
+    'street',
+    'house',
+    'society'];
+
+     let address = '';
+
+    for (let i = 0; i < objectName.length; i++) {
+
+          let spaceDes = objectName[i];
+
+         address = address + (obj[spaceDes] || '__');
+        if (i !== objectName.length - 1) {
+            address = address + ',';
+        }
+    }
+
+     return address;
 }
 
-// Define a callback function
-function handleResult(result) {
-   console.log(result);
-}
-
-// Call the main function and provide the callback
-doSomethingAsync(handleResult);
-
-
-/*
-We have a function doSomethingAsync that simulates an asynchronous operation using setTimeout.
-The doSomethingAsync function takes a callback function callback as an argument.
-Inside doSomethingAsync, after the asynchronous operation is completed, it calls the provided callback function and passes the result to it.
-We define a separate function handleResult that will be used as the callback.
-We call doSomethingAsync and pass handleResult as the callback function.
-When doSomethingAsync is called, it simulates an asynchronous operation and then calls the handleResult function with the result after the operation is completed.
-*/
+// Test cases
+console.log(findAddress({street: 10, house: '15A', society: 'Earth Perfect'})); // Output: 10,15A,Earth Perfect
+console.log(findAddress({house:'12a', society: 'Earth Perfect'})); // Output: 10,__,Earth Perfect
+console.log(findAddress({street: 10})); // Output: 10,__,__
