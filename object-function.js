@@ -120,3 +120,41 @@ console.log(personalInfo(myinfo));
 
  const expense=totalCost(shoppingCart);
  console.log('Total expense today:' , expense);
+
+
+
+
+                                      // Object in Details
+
+const student={
+  name:'Naeem Hossen',
+  id:100000,
+  adress:'Bangladesh',
+  isSingle:true,
+  friends:['Nur','Sana','Riya','Lima','Fariya'],
+  movies:[
+       { name:'Name.1',year:2015},{name:'king khan',year:2018}//inside array we can declarre object
+  ],
+  act:function(){
+        console.log('I like eating food always')
+  },
+  car:{
+      brand:'tesla',
+      price:5000000,
+      made:2024,
+      manufacturer:{
+          name:'tesla',
+          ceo:'Elon Musk',
+          country:'USA'
+          
+      }
+  }
+}
+
+// console.log(student.act);
+// student.act();
+console.log(student);
+
+const products=[{
+  
+}]
