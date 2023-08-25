@@ -1,10 +1,4 @@
-// / Arguments array like object
-
-function add(num1,num2){
-    console.log(num1,num2)
-    console.log(arguments);
+for(let i=5;i<=100;i++);{
 }
 
-add(12,13,45,89,78);
 
-// 

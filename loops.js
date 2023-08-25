@@ -286,3 +286,49 @@ for (let i=2;i<=15;i++){
    
 }
  console.log(fibo);
+
+                                       //for of loops
+
+
+ // matched javascript for of loops
+
+const numbers =[45,65,23,98,19];
+
+// for (let i=0; i<numbers.length;i++){
+//     const number=numbers[i];
+//     console.log(number);
+// }
+//alternative options
+for(const number of numbers){
+   console.log(number);
+}
+
+// products
+
+const products=[
+    {id:1,name:'walton phone',price:19000},
+    {id:2,name:'sony phone',price:34000},
+    {id:3,name:'mi phone',price:69000},
+    {id:4,name:'samsung phone',price:45000},
+    {id:5,name:'iphone phone',price:49000},
+    {id:6,name:'vivo phone',price:13000},
+    {id:7,name:'oneplus phone',price:32000},
+    {id:8,name:'nothing phone',price:87000}
+
+];
+
+for (const product of products){
+    // console.log(product);
+
+}  
+//matched products searcheed
+function matchedPRoducts(products,search){
+    const matched=[];
+    for (const product of products){
+        // console.log(product)
+        console.log(product.name.includes(search));
+    }
+}
+
+const reSult=matchedPRoducts(products,'phone');
+console.log(reSult);
