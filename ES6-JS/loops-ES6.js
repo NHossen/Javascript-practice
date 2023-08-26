@@ -29,3 +29,35 @@ for(const key in namePart){
     const keyValue=namePart[key]
     console.log(keyValue);
 }
+
+                  //Similar Map/Foreach/find
+
+                             //Map using in array // map==^ loops through each element of the array and do the operations that you passe in the call back function and hold the result 
+                             
+                             const numbers=[34,232,12,123,67,34,23];
+                             
+                             // const doubIt=n=>n*2;
+                             // const newNumber=numbers.map(doubIt);//by seperate number
+                             
+                             const newNumber=numbers.map(n=>n*2);
+                            console.log(newNumber)
+
+                           //Foreach
+const myNum=[1,2,34,5,65,223];
+const result=myNum.forEach//no return come
+
+                            //filter and find depends on conditions
+
+const playerNumber=[23,543,1,2,345,235];
+const playeerHeight=[75,65,72,55,58];
+
+//const selected=playeerHeight.filter(p=>p>70);//FILTER working conditions
+const selected=playeerHeight.filter(p=>p%2 ===0);//by filter get 
+console.log(selected);
+
+//string length chack by filter
+const friends=['hdfgad','Riya','Sana','lima','sadiya'];
+const friendsLenth=friends.filter(f=>f.length<=4);
+
+console.log(friendsLenth);
+
