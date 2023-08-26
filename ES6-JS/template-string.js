@@ -12,7 +12,7 @@ const myDetails=`My Name is${myName},I am ${age},years old.my future car is ${my
 `
 
 let newParagraph = document.createElement("p");
-newParagraph.textContent = myDetails;
+newParagraph.innerHTML = myDetails;
 let containerDiv = document.getElementById("container");
 containerDiv.appendChild(newParagraph);
 //console.log(myDetails)
