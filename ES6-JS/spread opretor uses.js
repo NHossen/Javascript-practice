@@ -43,5 +43,15 @@ const myObj = { name: 'Naeem Hossen', age:24, favtColor:"yellow", hobbis:'Travel
 const myCat= { catName: 'Tom', catAge:4 ,catColor:"white", favFoot:"milk"};
 
 const combinedObj =  {...myObj,...myCat} ;
+//console.log(combinedObj);
 
-console.log(combinedObj);
+
+//about object key,values entries value,seal,fridge
+const keysName=Object.keys(myCarDetails);
+const valueName=Object.values(myCarDetails);
+const entriesName=Object.entries(myCarDetails);
+console.log(keysName);
+console.log(valueName[1]);//by object we can get a array and we can take an array by number
+console.log(entriesName);//by object we can get a array and we can take an array by number
+
+
