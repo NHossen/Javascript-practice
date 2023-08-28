@@ -44,7 +44,14 @@ for(const key in namePart){
 
                            //Foreach
 const myNum=[1,2,34,5,65,223];
-const result=myNum.forEach//no return come
+//const result=myNum.forEach//no return come
+
+const foreachNum=(n)=>console.log(n);
+//myNum.forEach((n) => console.log(n));
+myNum.forEach(foreachNum)
+//console.log(foreachNum)
+
+
 
                             //filter and find depends on conditions
 
@@ -53,11 +60,26 @@ const playeerHeight=[75,65,72,55,58];
 
 //const selected=playeerHeight.filter(p=>p>70);//FILTER working conditions
 const selected=playeerHeight.filter(p=>p%2 ===0);//by filter get 
-console.log(selected);
+//console.log(selected);
 
 //string length chack by filter
 const friends=['hdfgad','Riya','Sana','lima','sadiya'];
 const friendsLenth=friends.filter(f=>f.length<=4);
 
-console.log(friendsLenth);
+//console.log(friendsLenth);
+
+                                      //Reduce 
+const arr=[1,2,3,4,5,6,7,8,9];
+const sumArray=arr.reduce((previous,current) => previous + current);
+//console.log('my sum',sumArray);
+/*
+previous + current =result
+
+0+1=1
+1+1=2
+2+2=4
+3+4=7
+
+
+*/
 
