@@ -59,4 +59,11 @@ newArr.push(12)
 
 console.log(newArr);
 
-//fet
+//fetch//JSON
+const studentXi={
+    name:"Naeem Hossen",
+    age:23,
+    movies:['King Khan','Dhakar King']
+};
+const convertJson=JSON.stringify(studentXi);
+console.log(convertJson);
