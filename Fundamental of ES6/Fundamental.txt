@@ -41,4 +41,29 @@ JavaScript Must need to know :==
         
     ]
  }
- 7.
+
+ 7. ES6 main feature need to know //let and const
+
+ 8.Template String== `This is name .it ieirrrr`
+
+ 9. Arrow fubntion
+
+ const data =()=>{
+    this is arrray fsduntion 
+
+ }
+
+ const giveMoney =()=> 55
+
+ 10. Spread operator
+
+ const arr=[1,2,34,4534,653]
+const  newArr=[...arr,12,43,345]
+
+11.Map ForEach Filter Find
+
+11.Destructuring > array destructure
+** if destructure in array rigth side and left side should be array
+
+11.Destructuring > Object destructure
+** if destructure in Object rigth side and left side should be Object

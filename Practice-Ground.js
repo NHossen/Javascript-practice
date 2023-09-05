@@ -36,3 +36,27 @@ const filter=numbers=>{
  console.log(student.name);
  console.log(student['name']);//get object by brakect notation should be string inside propert
  console.log(student[studentName]);//get object by brakect notation should be string inside propert
+
+
+ //Template String main feature in ES6
+const aboutMe=`My name is ${student.name},I am ${student.age} years old my favt color is ${student.favtColor},My Car Price is ${student.car.price}`
+
+console.log(aboutMe)
+
+//arrow funtion in 1 line
+
+const giveMoney=()=> 6;
+
+const isEvem=x=>x%2===0;
+
+const multiPera=(a,b,c)=> a+b+c
+console.log()
+
+const arr=[1,2,34,4534,653]
+const  newArr=[...arr,12,43,345];
+
+newArr.push(12)
+
+console.log(newArr);
+
+//fet
