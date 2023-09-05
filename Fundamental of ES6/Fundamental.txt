@@ -1,5 +1,44 @@
+
 **What is Javascript
 Javascript is Just in Complied ,Multipardigm ,Prototyped based,dynamicaly typed high abstrection Language;
 
 **How to run Javascript file?
-V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone, or can be embedded into any C++ application.
+V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++.It is used in Chrome and in Node.js, among others. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone, or can be embedded into any C++ application.
+
+***JavaScript Singel Thrated Language
+**Differeent between Synchronous and Asynchronous
+Synchronous Funtion Working one by one //Menas one data load then another data load;
+
+Asynchronous Function Working all together //Means data load all together
+
+
+JavaScript Must need to know :==
+
+1. How to declare a variable using let and const ,
+ ** const fatherName="abbu"// This value is not changeable
+ ** let season ="rainy"// If value changable need to declare by let variable
+
+ 2. Condition
+ ** 6 basic condition must need to know > < === !== <= >=
+ ** also need to know muliple condition expression symbol && || 
+
+ 3.Array 
+ //how to declare and array [1,3,235,55,233].
+ //how to get index from an array//
+ // also need to array.length,push,by index you need change array ,
+
+ 4.loop.
+ for..loop
+
+ 5.Funtion 
+ //
+ 6.object..
+ //const student ={
+    name:"sakib",
+    age:13,
+    id:2
+    favtFood:[
+        
+    ]
+ }
+ 7.

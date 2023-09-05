@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Clock</title>
+<style>
+  #clock {
+    font-size: 2rem;
+    font-family: monospace;
+  }
+</style>
+</head>
+<body>
+<div id="clock"></div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const time = `${hours}:${minutes}:${seconds}`;
+  
+  document.getElementById('clock').textContent = time;
+}
+
+// Initial call to update the clock
+updateClock();
+
+// Update the clock every second
+//setInterval(updateClock, 1000);
+</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Clock</title>
+<style>
+  #clock {
+    font-size: 2rem;
+    font-family: monospace;
+  }
+</style>
+</head>
+<body>
+<div id="clock"></div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  const options = { hour: '2-digit', minute: '2-digit', second: '2-digit',minisecond:"2-digit"};
+  const time = now.toLocaleTimeString('en-US', options);
+  
+  document.getElementById('clock').textContent = time;
+}
+
+// Initial call to update the clock
+updateClock();
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+</script>
+</body>
+</html>

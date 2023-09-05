@@ -19,4 +19,20 @@ const filter=numbers=>{
  console.log(evenx);
 
 
+ //Object declaration and get object by 3 way;
 
+ const student={
+    name:"naeem Hossen",
+    age:34,
+    favtColor:['yellow','gray','red'],
+    car:{
+       brand:"NIssa ptroln V8",
+       price:3400, 
+       carDetails:['wehalles','red',"v8"]
+    },
+ }
+ const studentName="name";
+
+ console.log(student.name);
+ console.log(student['name']);//get object by brakect notation should be string inside propert
+ console.log(student[studentName]);//get object by brakect notation should be string inside propert
